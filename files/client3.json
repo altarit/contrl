@@ -1,0 +1,14 @@
+{
+  "id": "#03client_client",
+  "server": {
+    "enable": false,
+    "port": 501
+  },
+  "cipher" : {
+    "publicKeyPath": "keys/clientC3/publicKey.key",
+    "privateKeyPath": "keys/clientC3/privateKey.key"
+  },
+  "onStartup": [
+    "connect 502"
+  ]
+}

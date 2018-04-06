@@ -1,0 +1,29 @@
+{
+  "id": "#02client_client",
+  "server": {
+    "enable": true,
+    "port": 502
+  },
+  "cipher" : {
+    "publicKeyPath": "keys/clientC2/publicKey.key",
+    "privateKeyPath": "keys/clientC2/privateKey.key"
+  },
+  "peers": [{
+    "id": "#01client_client",
+    "publicKeyPath": "keys/clientC1/publicKey.key",
+    "roles": ["all"]
+  }, {
+    "id": "#03client_client",
+    "publicKeyPath": "keys/clientC3/publicKey.key",
+    "roles": ["info"]
+  }, {
+    "id": "#webapp_client",
+    "publicKeyPath": "keys/clientW1/publicKey.key",
+    "roles": ["level5", "info"]
+  }],
+  "defaultRoles": ["level1"],
+  "onStartup": [
+    "connect 501",
+    "connections"
+  ]
+}

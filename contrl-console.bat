@@ -1,0 +1,1 @@
+java -cp contrl-parent/contrl-console/target/contrl-console-1.0-SNAPSHOT.jar;contrl-parent/contrl-console/target/contrl/lib/* com.altarit.contrl.console.Main -config files/client1.json

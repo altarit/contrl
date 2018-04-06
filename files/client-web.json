@@ -1,0 +1,16 @@
+{
+  "id": "#webclient_server",
+  "server": {
+    "enable": true,
+    "port": 500
+  },
+  "cipher" : {
+    "publicKeyPath": "keys/clientW1/publicKey.key",
+    "privateKeyPath": "keys/clientW1/privateKey.key"
+  },
+  "onStartup": [
+    "hi",
+    "connect501",
+    "connections"
+  ]
+}

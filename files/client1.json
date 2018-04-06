@@ -1,0 +1,19 @@
+{
+  "id": "#01client_client",
+  "server": {
+    "enable": true,
+    "port": 501
+  },
+  "cipher" : {
+    "publicKeyPath": "keys/clientC1/publicKey.key",
+    "privateKeyPath": "keys/clientC1/privateKey.key"
+  },
+  "peers": [{
+    "id": "#02client_client",
+    "publicKeyPath": "keys/clientC2/publicKey.key"
+  }],
+  "onStartup": [
+    "hi cl1",
+    "connections"
+  ]
+}
